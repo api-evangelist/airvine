@@ -64,5 +64,8 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Airvine is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Airvine Scientific is a Silicon Valley maker of indoor 60 GHz millimeter-wave wireless backhaul hardware. Its WaveTunnel modules deliver a multi-gigabit, non-line-of-sight, beam-steering indoor Ethernet backbone in a resilient ring topology, and the WaveCore and WaveCore Flex products extend that wireless gigabit backbone; all run on the VineSuite software platform (VineOS on the device, the browser-based VineManager, the AirvineMobile app and the VineCalculator planning tool). The products are sold into multi-dwelling units, hospitality, education, industrial and large-venue networks through distributors, certified resellers and certified installers. Airvine publishes no public API: the device manuals name an Open API, SNMP and CLI management surface with a per-device REST API authentication key, but the API/SNMP documents they refer to are not published on the public technical documentation page and there is no developer portal or machine-readable contract.
+
+- Website: https://airvine.com/
+- Technical documentation: https://airvine.com/support/technical-documentation/
+- Coverage: gated / customer-only-docs — the device Open API / SNMP documents the public manuals refer to are not published; see `x-coverage` in apis.yml.

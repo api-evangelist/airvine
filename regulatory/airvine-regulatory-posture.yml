@@ -1,0 +1,31 @@
+generated: '2026-09-19'
+method: searched
+probe: true
+source: https://airvine.com/
+note: >-
+  Airvine Scientific publishes a WordPress marketing and support site with a privacy policy, a
+  click-through VineOS EULA, product user manuals and firmware release notes (PDF), but no
+  accessibility conformance report, subprocessor list, DPA, data-subject-request page, SBOM,
+  transparency report, AI transparency statement or data-residency documentation. Every
+  conventional path probed returned a real 404 (a random control path also 404s). No prior
+  artifacts (security.txt, trust center, lifecycle, conformance) exist to harvest from: the
+  security-programs probe found no vulnerability-disclosure page and no trust center. An empty
+  signals map is the measurement, not a gap in the pass.
+probed:
+- {url: https://airvine.com/accessibility, status: 404}
+- {url: https://airvine.com/accessibility/vpat, status: 404}
+- {url: https://airvine.com/legal/subprocessors, status: 404}
+- {url: https://airvine.com/legal/dpa, status: 404}
+- {url: https://airvine.com/privacy/requests, status: 404}
+- {url: https://airvine.com/transparency, status: 404}
+- {url: https://airvine.com/security/sbom, status: 404}
+- {url: https://airvine.com/docs/data-residency, status: 404}
+- {url: https://airvine.com/ai/transparency, status: 404}
+- {url: https://airvine.com/legal/report-content, status: 404}
+- {url: https://airvine.com/security, status: 404}
+- {url: https://airvine.com/trust, status: 404}
+- {url: https://airvine.com/terms, status: 404}
+- {url: https://airvine.com/privacy-policy/, status: 200, note: privacy policy only — no DSR mechanism, GPC statement or subprocessor table}
+- {url: https://airvine.com/eula/, status: 200, note: click-through VineOS end-user license agreement, not a support-lifetime or terms page}
+- {url: https://airvine.com/.well-known/security.txt, status: 404}
+signals: {}

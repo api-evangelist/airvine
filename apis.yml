@@ -1,7 +1,16 @@
 aid: airvine
 name: Airvine
-description: 'Airvine is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Airvine Scientific is a Silicon Valley maker of indoor 60 GHz millimeter-wave wireless backhaul
+  hardware. Its WaveTunnel modules deliver a multi-gigabit, non-line-of-sight, beam-steering indoor Ethernet
+  backbone in a resilient ring topology, and the WaveCore and WaveCore Flex products extend that wireless
+  gigabit backbone; all run on the VineSuite software platform (VineOS on the device, the browser-based
+  VineManager, the AirvineMobile app and the VineCalculator planning tool). The products are sold into
+  multi-dwelling units, hospitality, education, industrial and large-venue networks through distributors,
+  certified resellers and certified installers. Airvine publishes no public API: the device manuals name
+  an Open API, SNMP and CLI management surface with a per-device REST API authentication key, but the
+  API/SNMP documents they refer to are not published on the public technical documentation page and there
+  is no developer portal or machine-readable contract.'
+image: https://airvine.com/wp-content/uploads/airvine-logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/airvine/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +21,13 @@ created: '2026-09-19'
 modified: '2026-09-19'
 tags:
 - Company
+- Wireless Networking
+- Networking Hardware
+- Telecommunications
+- Millimeter Wave
+- Broadband
+- Enterprise Networking
+- Network Equipment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +36,72 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://airvine.com/
+- type: Documentation
+  name: Technical Documentation (product user manuals, configuration and installation guides)
+  url: https://airvine.com/support/technical-documentation/
+- type: Support
+  url: https://airvine.com/support/
+- type: Blog
+  url: https://airvine.com/blog/
+- type: BlogRSS
+  url: https://airvine.com/feed/
+- type: Newsroom
+  url: https://airvine.com/news-events/
+- type: PrivacyPolicy
+  url: https://airvine.com/privacy-policy/
+- type: License
+  name: VineOS End-User License Agreement (click-through)
+  url: https://airvine.com/eula/
+- type: ReleaseNotes
+  name: VineOS (WaveTunnel) firmware release notes, SW 1.3.0.81, May 2024 (PDF)
+  url: https://cousides.sirv.com/collateral/Airvine-VineOS-Release-Notes.pdf
+- type: About
+  url: https://airvine.com/company/
+- type: Careers
+  url: https://airvine.com/careers/
+- type: Contact
+  url: https://airvine.com/contact/
+- type: Partners
+  url: https://airvine.com/partners/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/airvine
+- type: X
+  url: https://x.com/wavetunnel
+- type: DomainSecurity
+  url: security/airvine-domain-security.yml
+- type: RegulatoryPosture
+  url: regulatory/airvine-regulatory-posture.yml
+- type: LLMsTxt
+  url: llms/airvine-llms.txt
+x-enrichment:
+  date: '2026-09-19'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: The public WaveTunnel user manual lists an "Open API" and SNMP management interface and the
+    WaveCore configuration guide describes a per-device RESTAPI Authentication Key, but both refer readers
+    to separate "API/SNMP documents" that are absent from the public Technical Documentation page, whose
+    only other document channel is the partner portal login at partner.airvine.com; airvine.com/api, /docs
+    and /openapi.json all 404 and no developer, docs or api subdomain resolves.
+  evidence:
+  - url: https://cousides.sirv.com/collateral/Airvine-User-Manual-Configuration-Guide-Wave-Tunnel.pdf
+    status: 200
+  - url: https://media.airvine.com/collateral/Airvine-Configuration-Guide-WaveCore.pdf
+    status: 200
+  - url: https://airvine.com/support/technical-documentation/
+    status: 200
+  - url: https://partner.airvine.com/wp-login.php
+    status: 200
+  - url: https://airvine.com/api
+    status: 404
+  - url: https://airvine.com/openapi.json
+    status: 404
+  - url: https://airvine.com/.well-known/agent-card.json
+    status: 404
+  - url: https://airvine.com/llms.txt
+    status: 404
+  checked: '2026-09-19'

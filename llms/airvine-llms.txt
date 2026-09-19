@@ -1,0 +1,70 @@
+# Airvine Scientific
+
+> Silicon Valley maker of indoor 60 GHz millimeter-wave wireless backhaul hardware. The
+> WaveTunnel (multi-gigabit, non-line-of-sight, beam-steering, ring-topology indoor
+> backbone), WaveCore and WaveCore Flex (wireless gigabit backbone) products run on the
+> VineSuite software platform — VineOS on the device, the browser-based VineManager, the
+> AirvineMobile app and the VineCalculator planning tool — and are sold into multi-dwelling
+> units, hospitality, education, industrial and large-venue networks through distributors,
+> certified resellers and certified installers.
+
+generated: 2026-09-19
+method: generated
+source: apis.yml + artifacts in this repository (no /llms.txt is published by the provider;
+https://airvine.com/llms.txt returns 404)
+
+## API surface
+
+Airvine publishes **no public API**. There is no developer portal, no API reference, no
+OpenAPI/AsyncAPI/GraphQL document, no SDK on any public package registry, no public MCP
+server and no A2A agent card; developer.airvine.com, docs.airvine.com and api.airvine.com
+do not resolve. The devices themselves expose a management surface: the public WaveTunnel
+User Manual and Configuration Guide lists a Web GUI, mobile app, command-line interface,
+"Open API" and SNMP interface, and the WaveCore Configuration Guide describes a per-device
+"RESTAPI Authentication Key" for external remote-management connections. Both manuals refer
+readers to separate "API/SNMP documents" that are not published on the public Technical
+Documentation page, so the contract is customer-only and nothing here is derived from it.
+
+## Company
+
+- [Airvine Scientific](https://airvine.com/): Company home.
+- [Company](https://airvine.com/company/): About, board and investors (Valley Capital, Crosslink Capital).
+- [News & Events](https://airvine.com/news-events/): Press releases and events.
+- [Careers](https://airvine.com/careers/)
+- [Contact](https://airvine.com/contact/)
+- [Partners](https://airvine.com/partners/): Distributor, certified reseller and certified installer program; partner portal at https://partner.airvine.com/ (login required).
+
+## Products
+
+- [WaveTunnel](https://airvine.com/products/wavetunnel/): Indoor 60 GHz wireless backhaul, 2 Gbps, up to 150 m links, ring topology.
+- [WaveCore](https://airvine.com/products/wavecore/): Wireless gigabit backbone.
+- [WaveCore Flex](https://airvine.com/products/wavecore-flex/)
+- [VineSuite](https://airvine.com/products/vinesuite/): VineOS, VineManager, AirvineMobile, VineCalculator.
+
+## Support and documentation
+
+- [Support](https://airvine.com/support/)
+- [Technical Documentation](https://airvine.com/support/technical-documentation/): Getting-started, installation, configuration and regulatory guides (PDF).
+- [WaveTunnel User Manual and Configuration Guide](https://cousides.sirv.com/collateral/Airvine-User-Manual-Configuration-Guide-Wave-Tunnel.pdf): Names the Open API and SNMP management interfaces.
+- [WaveCore Configuration Guide](https://media.airvine.com/collateral/Airvine-Configuration-Guide-WaveCore.pdf): Describes the RESTAPI Authentication Key.
+- [Downloads](https://airvine.com/support/downloads/): Firmware (behind a click-through EULA) and release notes.
+- [VineOS Release Notes](https://cousides.sirv.com/collateral/Airvine-VineOS-Release-Notes.pdf): WaveTunnel VineOS 1.3.0.81, May 2024.
+- [WaveCore Release Notes](https://media.airvine.com/collateral/Airvine-WaveCore-Release-Notes.pdf)
+- [FAQs](https://airvine.com/support/faqs/)
+- [Airvine University](https://airvine.com/support/airvine-university/): Training sessions.
+
+## Legal
+
+- [Privacy Policy](https://airvine.com/privacy-policy/)
+- [VineOS EULA](https://airvine.com/eula/)
+
+## Resources
+
+- [Blog](https://airvine.com/blog/) — RSS at https://airvine.com/feed/
+- [Resources](https://airvine.com/resources/): Brochures, datasheets, app notes, case studies, webinars.
+
+## API Evangelist artifacts
+
+- [security/airvine-domain-security.yml](security/airvine-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe.
+- [well-known/airvine-well-known.yml](well-known/airvine-well-known.yml): /.well-known/ probe record (all 404 on four hosts).
+- [regulatory/airvine-regulatory-posture.yml](regulatory/airvine-regulatory-posture.yml): horizontal regulatory signals (none published).

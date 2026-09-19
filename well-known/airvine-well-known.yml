@@ -1,0 +1,109 @@
+generated: '2026-09-19'
+method: probed
+source: live GET of /.well-known/* and /llms.txt on every Airvine host reachable from apis.yml and the site
+summary: >-
+  Airvine publishes no /.well-known/ discovery surface on any host. The WordPress marketing site
+  (airvine.com / www.airvine.com), the WordPress partner portal (partner.airvine.com) and the
+  collateral CDN (media.airvine.com) each answer every /.well-known/* path, /llms.txt and
+  /security.txt with a real 404 HTML body; a control path with a random suffix
+  (/.well-known/zz-control-3588) also returned 404, so there is no soft-200 catch-all. No
+  agent card, no OAuth/OIDC metadata, no api-catalog, no security.txt. The candidate developer
+  hosts developer.airvine.com, docs.airvine.com and api.airvine.com do not resolve in DNS.
+  No WellKnown or SecurityTxt pointer is wired because nothing was served.
+hosts:
+- host: https://airvine.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /security.txt
+    status: 404
+  - path: /openapi.json
+    status: 404
+  - path: /swagger.json
+    status: 404
+  - path: /.well-known/zz-control-3588
+    status: 404
+    note: control probe — a random path returning 404 confirms the 404s above are real
+- host: https://www.airvine.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://partner.airvine.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /security.txt
+    status: 404
+- host: https://media.airvine.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /security.txt
+    status: 404
+unresolved_hosts:
+- host: developer.airvine.com
+  resolves: false
+- host: docs.airvine.com
+  resolves: false
+- host: api.airvine.com
+  resolves: false
