@@ -66,6 +66,81 @@
 
 Airvine Scientific is a Silicon Valley maker of indoor 60 GHz millimeter-wave wireless backhaul hardware. Its WaveTunnel modules deliver a multi-gigabit, non-line-of-sight, beam-steering indoor Ethernet backbone in a resilient ring topology, and the WaveCore and WaveCore Flex products extend that wireless gigabit backbone; all run on the VineSuite software platform (VineOS on the device, the browser-based VineManager, the AirvineMobile app and the VineCalculator planning tool). The products are sold into multi-dwelling units, hospitality, education, industrial and large-venue networks through distributors, certified resellers and certified installers. Airvine publishes no public API: the device manuals name an Open API, SNMP and CLI management surface with a per-device REST API authentication key, but the API/SNMP documents they refer to are not published on the public technical documentation page and there is no developer portal or machine-readable contract.
 
-- Website: https://airvine.com/
-- Technical documentation: https://airvine.com/support/technical-documentation/
-- Coverage: gated / customer-only-docs — the device Open API / SNMP documents the public manuals refer to are not published; see `x-coverage` in apis.yml.
+**Areas:** Company · Wireless Networking · Networking Hardware · Telecommunications · Millimeter Wave · Broadband · Enterprise Networking · Network Equipment
+
+## Airvine on APIs.io
+
+Everything profiled for Airvine is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/airvine/](https://apis.io/providers/airvine/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Airvine Domain Security](https://apis.io/security/airvine/airvine-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://airvine.com/)
+- [Documentation](https://airvine.com/support/technical-documentation/)
+- [Support](https://airvine.com/support/)
+- [Blog](https://airvine.com/blog/)
+- [Privacy policy](https://airvine.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 11.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 8.3** — Telecommunications
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/airvine/](https://apis.io/providers/airvine/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Airvine: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/airvine/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
